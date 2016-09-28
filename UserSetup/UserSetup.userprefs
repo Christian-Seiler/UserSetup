@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="UserSetup.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/Settings.Designer.cs">
+    <Files>
+      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Properties/Resources.resx" Line="1" Column="1" />
+      <File FileName="Properties/Settings.settings" Line="1" Column="1" />
+      <File FileName="Properties/Settings.Designer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UserSetup PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
