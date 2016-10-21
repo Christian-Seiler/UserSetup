@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\Mac\Home\Desktop\UserSetup\|\\Mac\Home\Desktop\|\\Mac\Home\Documents\08 Coding\C#\UserSetup\|publish\</PublishUrlHistory>
+    <PublishUrlHistory>I:\UserSetup\|V:\UserSetup\|\\Mac\Home\Desktop\UserSetup\|\\Mac\Home\Desktop\|\\Mac\Home\Documents\08 Coding\C#\UserSetup\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory>http://www.christianseiler.ch</SupportUrlHistory>
     <UpdateUrlHistory />

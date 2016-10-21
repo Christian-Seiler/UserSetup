@@ -37,7 +37,6 @@
             this.kurzelLabel = new System.Windows.Forms.Label();
             this.abteilungComboBox = new System.Windows.Forms.ComboBox();
             this.abteilungLabel = new System.Windows.Forms.Label();
-            this.mailButton = new System.Windows.Forms.Button();
             this.mailLabel = new System.Windows.Forms.Label();
             this.printerListBox = new System.Windows.Forms.ListBox();
             this.userSetupLabel = new System.Windows.Forms.Label();
@@ -45,42 +44,43 @@
             this.logoLabel = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.infoButton = new System.Windows.Forms.Button();
+            this.mailTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(382, 117);
+            this.startButton.Location = new System.Drawing.Point(382, 143);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(75, 23);
             this.startButton.TabIndex = 4;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.weiterButton_Click);
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // nameTextBox
             // 
+            this.nameTextBox.Enabled = false;
             this.nameTextBox.Location = new System.Drawing.Point(12, 91);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 0;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // kurzelTextBox
             // 
-            this.kurzelTextBox.Location = new System.Drawing.Point(230, 91);
+            this.kurzelTextBox.Enabled = false;
+            this.kurzelTextBox.Location = new System.Drawing.Point(12, 146);
             this.kurzelTextBox.Name = "kurzelTextBox";
             this.kurzelTextBox.Size = new System.Drawing.Size(100, 20);
             this.kurzelTextBox.TabIndex = 2;
-            this.kurzelTextBox.TextChanged += new System.EventHandler(this.kurzelTextBox_TextChanged);
             // 
             // vornameTextBox
             // 
+            this.vornameTextBox.Enabled = false;
             this.vornameTextBox.Location = new System.Drawing.Point(118, 91);
             this.vornameTextBox.Name = "vornameTextBox";
             this.vornameTextBox.Size = new System.Drawing.Size(106, 20);
             this.vornameTextBox.TabIndex = 1;
-            this.vornameTextBox.TextChanged += new System.EventHandler(this.vornameTextBox_TextChanged);
             // 
             // nameLabel
             // 
@@ -103,7 +103,7 @@
             // kurzelLabel
             // 
             this.kurzelLabel.AutoSize = true;
-            this.kurzelLabel.Location = new System.Drawing.Point(230, 72);
+            this.kurzelLabel.Location = new System.Drawing.Point(12, 127);
             this.kurzelLabel.Name = "kurzelLabel";
             this.kurzelLabel.Size = new System.Drawing.Size(36, 13);
             this.kurzelLabel.TabIndex = 7;
@@ -122,39 +122,29 @@
             "Marketing",
             "Sekretariat",
             "Verkauf"});
-            this.abteilungComboBox.Location = new System.Drawing.Point(336, 90);
+            this.abteilungComboBox.Location = new System.Drawing.Point(230, 145);
             this.abteilungComboBox.Name = "abteilungComboBox";
-            this.abteilungComboBox.Size = new System.Drawing.Size(121, 21);
+            this.abteilungComboBox.Size = new System.Drawing.Size(146, 21);
             this.abteilungComboBox.TabIndex = 3;
             this.abteilungComboBox.SelectedIndexChanged += new System.EventHandler(this.abteilungComboBox_SelectedIndexChanged);
             // 
             // abteilungLabel
             // 
             this.abteilungLabel.AutoSize = true;
-            this.abteilungLabel.Location = new System.Drawing.Point(336, 72);
+            this.abteilungLabel.Location = new System.Drawing.Point(230, 127);
             this.abteilungLabel.Name = "abteilungLabel";
             this.abteilungLabel.Size = new System.Drawing.Size(51, 13);
             this.abteilungLabel.TabIndex = 8;
             this.abteilungLabel.Text = "Abteilung";
             // 
-            // mailButton
-            // 
-            this.mailButton.Location = new System.Drawing.Point(12, 117);
-            this.mailButton.Name = "mailButton";
-            this.mailButton.Size = new System.Drawing.Size(75, 23);
-            this.mailButton.TabIndex = 15;
-            this.mailButton.Text = "eMail prüfen";
-            this.mailButton.UseVisualStyleBackColor = true;
-            this.mailButton.Click += new System.EventHandler(this.mailButton_Click);
-            // 
             // mailLabel
             // 
             this.mailLabel.AutoSize = true;
-            this.mailLabel.Location = new System.Drawing.Point(12, 143);
+            this.mailLabel.Location = new System.Drawing.Point(230, 75);
             this.mailLabel.Name = "mailLabel";
-            this.mailLabel.Size = new System.Drawing.Size(96, 13);
+            this.mailLabel.Size = new System.Drawing.Size(32, 13);
             this.mailLabel.TabIndex = 16;
-            this.mailLabel.Text = "email@allpower.ch";
+            this.mailLabel.Text = "Email";
             // 
             // printerListBox
             // 
@@ -216,12 +206,20 @@
             this.infoButton.UseVisualStyleBackColor = true;
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
+            // mailTextBox
+            // 
+            this.mailTextBox.Enabled = false;
+            this.mailTextBox.Location = new System.Drawing.Point(230, 91);
+            this.mailTextBox.Name = "mailTextBox";
+            this.mailTextBox.Size = new System.Drawing.Size(227, 20);
+            this.mailTextBox.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 408);
-            this.Controls.Add(this.mailButton);
+            this.Controls.Add(this.mailTextBox);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.logoLabel);
@@ -238,6 +236,8 @@
             this.Controls.Add(this.kurzelTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.startButton);
+            this.Icon = global::UserSetup.Properties.Resources.favicon_allpower;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Allpower | User Setup";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -258,7 +258,6 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.ComboBox abteilungComboBox;
         private System.Windows.Forms.Label abteilungLabel;
-        private System.Windows.Forms.Button mailButton;
         private System.Windows.Forms.Label mailLabel;
         private System.Windows.Forms.ListBox printerListBox;
         private System.Windows.Forms.Label userSetupLabel;
@@ -266,6 +265,7 @@
         private System.Windows.Forms.Label logoLabel;
         private System.Windows.Forms.PictureBox logoPictureBox;
         private System.Windows.Forms.Button infoButton;
+        private System.Windows.Forms.TextBox mailTextBox;
     }
 }
 

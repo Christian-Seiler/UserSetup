@@ -45,10 +45,19 @@ namespace UserSetup
             var destFile = Path.Combine(template, "NormalEmail.dotm");
 
             string result;
+
+
             if (File.Exists(fileName))
             {
-                File.Copy(fileName, destFile);
-                result = $"Template \"{Program.abteilung}\" erstellt.\n";
+                File.Replace(fileName, destFile,"");
+                if (File.Exists(destFile))
+                {
+                    result = $"Template \"{Program.abteilung}\" erstellt.\n" + "Ursprüngliches TemplateFile gelöscht.\n";
+                }
+                else
+                {
+                    result = $"Template \"{Program.abteilung}\" erstellt.\n";
+                }
             } else
             {
                 result = $"Template \"{Program.abteilung}\" nicht vorhanden.\n";
@@ -88,8 +97,6 @@ namespace UserSetup
                 File.WriteAllText(filename, Regex.Replace(File.ReadAllText(filename), "Abteilung", Program.abteilung));
             }
 
-
-            
             return $"Signature für {Program.vorname} {Program.name} personalisiert.\n";
         }
 
@@ -127,37 +134,6 @@ namespace UserSetup
             key.SetValue("ReplySignature", "Allpower", RegistryValueKind.ExpandString);
             key.Close();
 
-            key = Registry.CurrentUser.OpenSubKey(".DEFAULT\\Software\\Microsoft\\Office\\UserInfo", true);
-            if (key == null)
-            {
-                Registry.CurrentUser.CreateSubKey(".DEFAULT\\Software\\Microsoft\\Office\\UserInfo");
-                key = Registry.CurrentUser.OpenSubKey(".DEFAULT\\Software\\Microsoft\\Office\\UserInfo", true);
-            }
-
-            key.SetValue("UserInitials", Program.kurzel, RegistryValueKind.String);
-            key.Close();
-
-
-            key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Office\\Common\\UserInfo", true);
-            if (key == null)
-            {
-                Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Office\\Common\\UserInfo");
-                key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Office\\Common\\UserInfo", true);
-            }
-
-            key.SetValue("UserInitials", Program.kurzel, RegistryValueKind.String);
-            key.Close();
-
-            key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Office\\CurrentVersion\\UserInfo", true);
-            if (key == null)
-            {
-                Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Office\\CurrentVersion\\UserInfo");
-                key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Office\\CurrentVersion\\UserInfo", true);
-            }
-
-            key.SetValue("UserInitials", Program.kurzel, RegistryValueKind.String);
-            key.Close();
-
             key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Main", true);
             if (key == null)
             {
@@ -173,7 +149,7 @@ namespace UserSetup
         }
     }
 
-    [SuppressUnmanagedCodeSecurityAttribute]
+    [SuppressUnmanagedCodeSecurity]
     internal static class SafeNativeMethods
     {
         [DllImport("winspool.drv", CharSet = CharSet.Unicode, SetLastError = true)]

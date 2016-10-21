@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\favicon_allpower.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="UserSetup" version="2.0.1.0" publicKeyToken="1862EB99B2648E5C" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="UserSetup" version="2.0.1.28019" publicKeyToken="69C439CA069A3B33" language="neutral" processorArchitecture="msil" />
     <commandLine file="UserSetup.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UserSetup.exe" size="362016">
-      <assemblyIdentity name="UserSetup" version="2.0.1.0" publicKeyToken="1862EB99B2648E5C" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UserSetup.exe" size="360992">
+      <assemblyIdentity name="UserSetup" version="2.0.1.28019" publicKeyToken="69C439CA069A3B33" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>V+J+uv6muqhXDMDUirbGrsVOgQL8bPDFGoAnJ9TyUU0=</dsig:DigestValue>
+        <dsig:DigestValue>oKfxN2gbIbiiGhBxOYPG7z94NoXYcj2JQdxISy/y2zc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

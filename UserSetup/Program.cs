@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace UserSetup
@@ -7,8 +8,8 @@ namespace UserSetup
     {
         public static string name;
         public static string vorname;
-        public static string kurzel;
         public static string abteilung;
+        public static string id;
         public static string mail;
         public static string selectedPrinter;
 
@@ -18,11 +19,12 @@ namespace UserSetup
         [STAThread]
         static void Main()
         {
+            List<string> list = Person.getInfo(Person.getID());
 
-            name = "";
-            vorname = "";
-            kurzel = "";
-            abteilung = "";
+            id = list[0];
+            vorname = list[1];
+            name = list[2];
+            mail = list[3];
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

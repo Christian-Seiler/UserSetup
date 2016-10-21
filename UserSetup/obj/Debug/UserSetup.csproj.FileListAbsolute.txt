@@ -14,3 +14,19 @@
 \\Mac\Home\Documents\08 Coding\C#\UserSetup\UserSetup\obj\Debug\UserSetup.exe.manifest
 \\Mac\Home\Documents\08 Coding\C#\UserSetup\UserSetup\obj\Debug\UserSetup.application
 \\Mac\Home\Documents\08 Coding\C#\UserSetup\UserSetup\obj\Debug\UserSetup.TrustInfo.xml
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.csprojResolveAssemblyReference.cache
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.Form1.resources
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.Properties.Resources.resources
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.csproj.GenerateResource.Cache
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.exe.config
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.exe.manifest
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.application
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.exe
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.pdb
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.exe.CodeAnalysisLog.xml
+H:\Projekte\UserSetup\UserSetup\bin\Debug\UserSetup.exe.lastcodeanalysissucceeded
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.TrustInfo.xml
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.exe.manifest
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.application
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.exe
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.pdb
