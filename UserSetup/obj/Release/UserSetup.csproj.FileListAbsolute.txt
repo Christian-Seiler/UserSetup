@@ -1,0 +1,15 @@
+H:\Projekte\UserSetup\UserSetup\bin\Release\UserSetup.exe.config
+H:\Projekte\UserSetup\UserSetup\bin\Release\UserSetup.exe.manifest
+H:\Projekte\UserSetup\UserSetup\bin\Release\UserSetup.application
+H:\Projekte\UserSetup\UserSetup\bin\Release\UserSetup.exe
+H:\Projekte\UserSetup\UserSetup\bin\Release\UserSetup.pdb
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.csprojResolveAssemblyReference.cache
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.Form1.resources
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.Properties.Resources.resources
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.csproj.GenerateResource.Cache
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.TrustInfo.xml
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.exe.manifest
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.application
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.exe
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.pdb
+H:\Projekte\UserSetup\UserSetup\obj\Release\UserSetup.Info.resources

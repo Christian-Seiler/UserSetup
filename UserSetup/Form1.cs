@@ -74,9 +74,8 @@ namespace UserSetup
 
         private void infoButton_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show($"Allpower User Setup\nVersion: {ProductVersion}\n\nDieses Produkt ist Urheberrechtlich geschützt.\n© 2016 Christian Seiler Services\nAlle Rechte vorbehalten.", "Info", MessageBoxButtons.OK);
-
-            if (result == DialogResult.OK) { }
+            Info info = new Info();
+            info.ShowDialog();
         }
     }
 }

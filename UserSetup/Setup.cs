@@ -44,24 +44,23 @@ namespace UserSetup
             var fileName = Path.Combine(sourceTemplate, file);
             var destFile = Path.Combine(template, "NormalEmail.dotm");
 
-            string result;
+            string result = "";
 
-
-            if (File.Exists(fileName))
+            if (File.Exists(file))
             {
-                File.Replace(fileName, destFile,"");
                 if (File.Exists(destFile))
                 {
-                    result = $"Template \"{Program.abteilung}\" erstellt.\n" + "Ursprüngliches TemplateFile gelöscht.\n";
+                    File.Delete(destFile);
+                    result = "Vorhandene Vorlage gelöscht\n";
                 }
-                else
-                {
-                    result = $"Template \"{Program.abteilung}\" erstellt.\n";
-                }
-            } else
+                File.Copy(fileName, destFile);
+                result += $"Template \"{Program.abteilung}\" erstellt.\n";
+            }
+            else
             {
                 result = $"Template \"{Program.abteilung}\" nicht vorhanden.\n";
             }
+
             return result;
         }
 

@@ -30,3 +30,4 @@ H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.exe.manifest
 H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.application
 H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.exe
 H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.pdb
+H:\Projekte\UserSetup\UserSetup\obj\Debug\UserSetup.Info.resources
