@@ -140,8 +140,8 @@ namespace UserSetup
                 key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Main", true);
             }
 
-            key.SetValue("Start Page", "http://srv01.local/intranet", RegistryValueKind.String);
-            key.SetValue("Secondary Start Pages", "http://srv01:8000/portal", RegistryValueKind.String);
+            key.SetValue("Start Page", "http://srv01.local/intranet/", RegistryValueKind.String);
+            key.SetValue("Secondary Start Pages", "http://srv01:8000/portal/", RegistryValueKind.String);
             key.Close();
 
             return "Outlook Signatur wurde festgelegt.\nInternet Explorer Startseiten wurden festgelegt.\n";
