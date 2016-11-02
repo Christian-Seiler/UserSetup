@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.DirectoryServices;
+using System.Security.Principal;
 using System.Collections.Generic;
 
 namespace UserSetup
@@ -8,7 +9,7 @@ namespace UserSetup
     {
         public static string getID()
         {
-            return System.Security.Principal.WindowsIdentity.GetCurrent().Name.Split('\\').Last();
+            return WindowsIdentity.GetCurrent().Name.Split('\\').Last();
         }
 
         public static List<string> getInfo(string id)
@@ -47,7 +48,5 @@ namespace UserSetup
                 return string.Empty;
             }
         }
-
-
     }
 }
