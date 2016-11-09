@@ -19,6 +19,8 @@ namespace UserSetup
             nameTextBox.Text = Program.name;
             mailTextBox.Text = Program.mail;
             kurzelTextBox.Text = Program.id;
+
+            abteilungComboBox.Text = Person.getInfo()[4];
         }
 
         private void abteilungComboBox_SelectedIndexChanged(object sender, EventArgs e)

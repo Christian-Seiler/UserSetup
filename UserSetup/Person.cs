@@ -12,6 +12,13 @@ namespace UserSetup
             return WindowsIdentity.GetCurrent().Name.Split('\\').Last();
         }
 
+        public static List<string> getInfo()
+        {
+            return getInfo(getID());
+        }
+
+
+
         public static List<string> getInfo(string id)
         {
             DirectoryEntry entry = new DirectoryEntry("LDAP://allpower.local", "intranet", "saarcos!50");
@@ -22,31 +29,15 @@ namespace UserSetup
 
             List<string> list = new List<string>();
 
-            foreach (SearchResult result in search.FindAll())
-            {
-                // ID
-                list.Add(GetProperty(result, "samAccountName"));
-                // First Name
-                list.Add(GetProperty(result, "givenName"));
-                // Last Name
-                list.Add(GetProperty(result, "sn"));
-                // email address
-                list.Add(GetProperty(result, "mail"));
-            }
+            SearchResult result = search.FindOne();
+
+            list.Add(result.Properties["samAccountName"][0].ToString());
+            list.Add(result.Properties["givenName"][0].ToString());
+            list.Add(result.Properties["sn"][0].ToString());
+            list.Add(result.Properties["mail"][0].ToString());
+            list.Add(result.Properties["distinguishedname"][0].ToString().Split(',')[1].Split('=').Last());
 
             return list;
-        }
-
-        public static string GetProperty(SearchResult result, string PropertyName)
-        {
-            if (result.Properties.Contains(PropertyName))
-            {
-                return result.Properties[PropertyName][0].ToString();
-            }
-            else
-            {
-                return string.Empty;
-            }
         }
     }
 }
