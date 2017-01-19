@@ -46,7 +46,7 @@ namespace UserSetup
 
             string result = "";
 
-            if (File.Exists(file))
+            if (File.Exists(fileName))
             {
                 if (File.Exists(destFile))
                 {
@@ -60,7 +60,7 @@ namespace UserSetup
             {
                 result = $"Template \"{Program.abteilung}\" nicht vorhanden.\n";
             }
-
+            
             return result;
         }
 
